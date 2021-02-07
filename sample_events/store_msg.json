@@ -1,0 +1,28 @@
+{
+  "msg_body": {
+    "name": "Shifter",
+    "dob": "1945-10-17",
+    "gender": "F",
+    "ssn_no": "396144610",
+    "data_share_consent": false,
+    "evnt_time": "2021-02-06T18:56:59.165483"
+  },
+  "msg_attr": {
+    "project": {
+      "DataType": "String",
+      "StringValue": "Reliable Queues with Dead-Letter-Queue"
+    },
+    "contact_me": {
+      "DataType": "String",
+      "StringValue": "github.com/miztiik"
+    },
+    "ts": {
+      "DataType": "Number",
+      "StringValue": "1612637819"
+    },
+    "store_id": {
+      "DataType": "Number",
+      "StringValue": "3"
+    }
+  }
+}

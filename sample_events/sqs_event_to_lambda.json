@@ -1,0 +1,52 @@
+{
+  "Records": [
+    {
+      "messageId": "3a425a1e-0410-406f-a1c6-bb3811",
+      "receiptHandle": "AQEB55NoctV/U2zm51DdBbK+8h5E9JsH2zETdPISgEN7TybvRQ==",
+      "body": "{\"name\": \"Deep Gnome\", \"dob\": \"2005-07-31\", \"gender\": \"F\", \"ssn_no\": \"460824747\", \"data_share_consent\": true, \"evnt_time\": \"2021-02-06T13:09:59.799923\"}",
+      "attributes": {
+        "ApproximateReceiveCount": "1",
+        "SentTimestamp": "1612616999814",
+        "SenderId": "AROATLDTQQAJC37UA2UMG:data_producer_sqs-message-producer-ingestor-stack",
+        "ApproximateFirstReceiveTimestamp": "1612617001814"
+      },
+      "messageAttributes": {
+        "owner": {
+          "stringValue": "Mystique Automation",
+          "stringListValues": [],
+          "binaryListValues": [],
+          "dataType": "String"
+        },
+        "store_id": {
+          "stringValue": "1",
+          "stringListValues": [],
+          "binaryListValues": [],
+          "dataType": "Number"
+        },
+        "contact_me": {
+          "stringValue": "github.com/miztiik",
+          "stringListValues": [],
+          "binaryListValues": [],
+          "dataType": "String"
+        },
+        "project": {
+          "stringValue": "Reliable Queues with Dead-Letter-Queue",
+          "stringListValues": [],
+          "binaryListValues": [],
+          "dataType": "String"
+        },
+        "ts": {
+          "stringValue": "1612616999",
+          "stringListValues": [],
+          "binaryListValues": [],
+          "dataType": "Number"
+        }
+      },
+      "md5OfMessageAttributes": "21d585c791839c08cf606ca97d6cde62",
+      "md5OfBody": "4e08f0d182c8fc257a991827670ae91c",
+      "eventSource": "aws:sqs",
+      "eventSourceARN": "arn:aws:sqs:us-east-1:111122223333:reliabe_message_q_1",
+      "awsRegion": "us-east-1"
+    }
+  ]
+}

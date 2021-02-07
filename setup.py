@@ -15,7 +15,7 @@ setuptools.setup(
 
     author="author",
 
-    package_dir={"": "reliable_sqs_with_dlq"},
+    package_dir={"": "stacks"},
     packages=setuptools.find_packages(where="reliable_sqs_with_dlq"),
 
     install_requires=[
