@@ -112,8 +112,11 @@ class ServerlessSqsProducerStack(core.Stack):
         data_producer_fn.add_permission(
             "restrictLambdaInvocationToFhInOwnAccount",
             principal=_iam.AccountRootPrincipal(),
-            action="lambda:InvokeFunction"
+            action="lambda:InvokeFunction",
+            source_account=core.Aws.ACCOUNT_ID
         )
+
+
 
         # Monitoring for Queue
         reliable_q_alarm = _cw.Alarm(

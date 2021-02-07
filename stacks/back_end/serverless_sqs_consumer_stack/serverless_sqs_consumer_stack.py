@@ -84,7 +84,9 @@ class ServerlessSqsConsumerStack(core.Stack):
         msg_consumer_fn.add_permission(
             "restrictLambdaInvocationToOwnAccount",
             principal=_iam.AccountRootPrincipal(),
-            action="lambda:InvokeFunction"
+            action="lambda:InvokeFunction",
+            source_account=core.Aws.ACCOUNT_ID,
+            source_arn=reliable_queue.queue_arn
         )
 
         # Set our Lambda Function to be invoked by SQS
