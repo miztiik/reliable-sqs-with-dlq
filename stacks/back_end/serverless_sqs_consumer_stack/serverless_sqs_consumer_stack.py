@@ -48,7 +48,7 @@ class ServerlessSqsConsumerStack(core.Stack):
         msg_consumer_fn = _lambda.Function(
             self,
             "msgConsumerFn",
-            function_name=f"reliable_queue_consumer_{construct_id}",
+            function_name=f"queue_consumer_fn_{construct_id}",
             description="Process messages in SQS queue",
             runtime=_lambda.Runtime.PYTHON_3_7,
             code=_lambda.InlineCode(

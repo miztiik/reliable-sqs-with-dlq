@@ -80,7 +80,7 @@ class ServerlessSqsProducerStack(core.Stack):
         data_producer_fn = _lambda.Function(
             self,
             "sqsDataProducerFn",
-            function_name=f"data_producer_{construct_id}",
+            function_name=f"data_producer_fn_{construct_id}",
             description="Produce data events and push to SQS",
             runtime=_lambda.Runtime.PYTHON_3_7,
             code=_lambda.InlineCode(
