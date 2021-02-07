@@ -54,7 +54,7 @@ class ServerlessSqsProducerStack(core.Stack):
             self,
             "reliableQueue01",
             delivery_delay=core.Duration.seconds(2),
-            queue_name=f"reliabe_message_q_1",
+            queue_name=f"reliable_message_q_1",
             retention_period=core.Duration.days(2),
             visibility_timeout=core.Duration.seconds(30),
             dead_letter_queue=reliable_q_dlq
