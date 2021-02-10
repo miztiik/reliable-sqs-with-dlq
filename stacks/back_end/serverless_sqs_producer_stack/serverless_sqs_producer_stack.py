@@ -89,7 +89,7 @@ class ServerlessSqsProducerStack(core.Stack):
             timeout=core.Duration.seconds(5),
             reserved_concurrent_executions=1,
             environment={
-                "LOG_LEVEL": "INFO",
+                "LOG_LEVEL": f"{stack_log_level}",
                 "APP_ENV": "Production",
                 "RELIABLE_QUEUE_NAME": f"{self.reliable_q.queue_name}",
                 "TRIGGER_RANDOM_FAILURES": "True"
@@ -115,8 +115,6 @@ class ServerlessSqsProducerStack(core.Stack):
             action="lambda:InvokeFunction",
             source_account=core.Aws.ACCOUNT_ID
         )
-
-
 
         # Monitoring for Queue
         reliable_q_alarm = _cw.Alarm(
